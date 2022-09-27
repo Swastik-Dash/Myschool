@@ -1,0 +1,88 @@
+<html>
+<body>
+
+    <table style="width:40%" border="5%" align="center">
+        <tr>
+            <td style="color:blue; "><u>Table</u></td>
+            <td style="color:blue;"><u>Operators</u></td>
+        </tr>
+
+<tr>
+    <td>
+        <p><b><center>Student List</center></b></p>
+    <table style="width:15%" border="5%" align="center" bgcolor="aqua">
+        <tr>
+            <td colspan="4" bgcolor="yellow"><b>Student</b></td>
+        </tr>
+        <tr>
+            <td rowspan="8" bgcolor="yellow"><b>List</b></td>
+        </tr>
+        <tr bgcolor="red">
+            <th>SNO</th>
+            <th>Name</th>
+            <th>Percentage</th>
+        </tr>
+        <tr bgcolor="lightpink">
+            <td>1</td>
+            <td>Ram</td>
+            <td>70</td>
+        </tr>
+        <tr bgcolor="orange">
+            <td>2</td>
+            <td>Sam</td>
+            <td>85</td>
+        </tr>
+        <tr>
+        <td colspan="4" bgcolor="yellow"><b>List</b></td>
+        </tr>
+        <tr bgcolor="grey">
+            <td>3</td>
+            <td>Don</td>
+            <td>95</td>
+        <tr bgcolor="darkblue">   
+            <td>4</td>
+            <td>Henry</td>
+            <td>75</td>
+        </tr>
+        <tr bgcolor="white">
+            <td>5</td>
+            <td>Bill</td>
+            <td>35</td>
+            </tr>
+            </table>
+        </td>
+        <td>
+            <script>
+                function hello()
+                {
+                    var a=parseInt(document.getElementById('number').value);
+                    var b=parseInt(document.getElementById('numbers').value);
+                    document.getElementByid('result').innerHTML=a+b;
+                }
+                function bye()
+                {
+                    var a=parseInt(document.getElementById('number').value);
+                    var b=parseInt(document.getElementById('numbers').value);
+                    document.getElementByid('result').innerHTML=a-b;
+                }
+            </script>
+            Enter first value:
+            <input type="number" value="" id="number"><br><br>
+            Enter second value:
+            <input type="number" value="" id="numbers"><br><br>
+            <input type="button" value="Addition" onclick=" return hello()">
+            <input type="button" value="Subtraction" onclick=" return bye()"><br><br>
+            The result is : <br>
+            <span id="result"></span>
+        </td>
+        </tr>
+    </table>
+</table>
+</body>
+</html>
+
+
+
+
+
+        

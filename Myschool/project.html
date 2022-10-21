@@ -53,33 +53,36 @@
         </td>
         <td>
             <script>
-                function hello()
-                {
-                    var a=parseInt(document.getElementById('number').value);
-                    var b=parseInt(document.getElementById('numbers').value);
-                    document.getElementByid('result').innerHTML=a+b;
+                function addNum(){
+                    var val1 = parseInt(document.getElementById("value1").value);
+                    var val2 = parseInt(document.getElementById("value2").value);
+                    var ansD = document.getElementById("answer");
+                    ansD.value = val1 + val2;
                 }
-                function bye()
-                {
-                    var a=parseInt(document.getElementById('number').value);
-                    var b=parseInt(document.getElementById('numbers').value);
-                    document.getElementByid('result').innerHTML=a-b;
+                    function subNum(){
+                    var val1 = parseInt(document.getElementById("value1").value);
+                    var val2 = parseInt(document.getElementById("value2").value);
+                    var ansD = document.getElementById("answer");
+                    ansD.value = val1 - val2;
                 }
             </script>
-            Enter first value:
-            <input type="number" value="" id="number"><br><br>
-            Enter second value:
-            <input type="number" value="" id="numbers"><br><br>
-            <input type="button" value="Addition" onclick=" return hello()">
-            <input type="button" value="Subtraction" onclick=" return bye()"><br><br>
-            The result is : <br>
-            <span id="result"></span>
+            <div>
+               First number : <input type="text" name="value1" value="" id="value1">
+               <br><br>
+               Second Number: <input type="text" name="value2" value="" id="value2">
+               <br><br>
+               <input type="button" value="Add" name="submit" onclick="addNum()">
+               <input type="button" value="Sub" name="submit" onclick="subNum()"
+               <br><br>
+               Answer: <input type="text" id="answer" name="answer" value="">
+            </div>
         </td>
-        </tr>
     </table>
 </table>
 </body>
 </html>
+
+
 
 
 
